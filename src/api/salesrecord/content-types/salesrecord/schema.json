@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "salesrecords",
+  "info": {
+    "singularName": "salesrecord",
+    "pluralName": "salesrecords",
+    "displayName": "Salesrecord",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "vin": {
+      "type": "string"
+    },
+    "brand": {
+      "type": "string"
+    },
+    "model": {
+      "type": "string"
+    },
+    "color": {
+      "type": "string"
+    },
+    "dsold": {
+      "type": "date"
+    },
+    "foption": {
+      "type": "string"
+    },
+    "Caddress": {
+      "type": "string"
+    },
+    "tprice": {
+      "type": "decimal"
+    },
+    "soldby": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  }
+}

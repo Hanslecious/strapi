@@ -1,0 +1,131 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs",
+  "info": {
+    "singularName": "blog",
+    "pluralName": "blogs",
+    "displayName": "Blog",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "Description": {
+      "type": "richtext"
+    },
+    "img": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::category.category",
+      "mappedBy": "blogs"
+    },
+    "Price": {
+      "type": "decimal",
+      "required": true
+    },
+    "Email": {
+      "type": "email",
+      "required": true
+    },
+    "Option1": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Option2": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Option3": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "Dealer_name2": {
+      "type": "string"
+    },
+    "Dealer_name3": {
+      "type": "string"
+    },
+    "Dealer_name1": {
+      "type": "string"
+    },
+    "Dealer1_region": {
+      "type": "string"
+    },
+    "Dealer2_region": {
+      "type": "string"
+    },
+    "Dealer3_region": {
+      "type": "string"
+    },
+    "Dealer_email2": {
+      "type": "email"
+    },
+    "Dealer_email3": {
+      "type": "email"
+    },
+    "Dealer1_phone": {
+      "type": "biginteger",
+      "unique": false
+    },
+    "Dealer2_phone": {
+      "type": "biginteger",
+      "unique": false
+    },
+    "Dealer3_phone": {
+      "type": "biginteger",
+      "unique": false
+    },
+    "Sold_date1": {
+      "type": "date",
+      "default": "2023-03-22"
+    },
+    "Sold_date2": {
+      "type": "date"
+    },
+    "Sold_date3": {
+      "type": "date"
+    },
+    "Quantity": {
+      "type": "integer"
+    },
+    "Total_Price": {
+      "type": "decimal"
+    },
+    "Dealer_name": {
+      "type": "string"
+    },
+    "Sold_date4": {
+      "type": "date"
+    },
+    "Sold_date5": {
+      "type": "date"
+    }
+  }
+}
